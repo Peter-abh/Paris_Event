@@ -267,7 +267,7 @@ def run_sync(raw_events: list[dict], session, already_transformed: bool = False)
 
 
 def sync_events() -> dict[str, int | str]:
-    """Récupère les événements et les synchronise en base."""
+   # Récupère les événements et les synchronise en base.
     session = get_session()
 
     try:
