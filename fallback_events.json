@@ -1,0 +1,89 @@
+[
+  {
+    "venue": {
+      "name": "La Halle aux cuirs - Parc de la Villette",
+      "raw_address": "211 avenue Jean Jaurès 75019 Paris",
+      "city": "Paris",
+      "postal_code": "75019",
+      "arrondissement": 19,
+      "latitude": 48.897801,
+      "longitude": 2.394739,
+      "external_id": "fallback-venue-1"
+    },
+    "event": {
+      "title": "Ça Disparaît ? (test public)",
+      "description": "Compagnie Stupefy - Rémy Berthier",
+      "long_description": "Un spectacle de magie nouvelle autour de la question : où vont les choses quand elles disparaissent ?",
+      "category_slug": "spectacle",
+      "start_date": "2026-10-15T14:15:00",
+      "end_date": "2026-10-15T15:15:00",
+      "price_conditions": "Sortie de résidence - réservation auprès de la compagnie",
+      "price_min": null,
+      "is_free": false,
+      "raw_keywords": "magie, mentalisme, magie nouvelle, hypnose",
+      "age_min": 7,
+      "age_max": 99,
+      "image_url": "https://cibul.s3.amazonaws.com/a3dd27f401364f41b7d48304456b666d.base.image.jpg",
+      "source_url": "https://openagenda.com/tableau-de-bord/events/ca-disparait-test-public-2161061",
+      "external_id": "fallback-event-1"
+    }
+  },
+  {
+    "venue": {
+      "name": "Musée d'Orsay",
+      "raw_address": "1 rue de la Légion d'Honneur 75007 Paris",
+      "city": "Paris",
+      "postal_code": "75007",
+      "arrondissement": 7,
+      "latitude": 48.860104,
+      "longitude": 2.326729,
+      "external_id": "fallback-venue-2"
+    },
+    "event": {
+      "title": "Exposition temporaire — Impressionnisme",
+      "description": "Une sélection d'œuvres majeures du mouvement impressionniste.",
+      "long_description": null,
+      "category_slug": "exposition",
+      "start_date": "2026-10-01T10:00:00",
+      "end_date": "2027-01-15T18:00:00",
+      "price_conditions": "16€ / 13€ tarif réduit",
+      "price_min": 13.0,
+      "is_free": false,
+      "raw_keywords": "exposition, peinture, impressionnisme",
+      "age_min": null,
+      "age_max": null,
+      "image_url": null,
+      "source_url": null,
+      "external_id": "fallback-event-2"
+    }
+  },
+  {
+    "venue": {
+      "name": "Parc de Bercy",
+      "raw_address": "128 quai de Bercy 75012 Paris",
+      "city": "Paris",
+      "postal_code": "75012",
+      "arrondissement": 12,
+      "latitude": 48.835,
+      "longitude": 2.382,
+      "external_id": "fallback-venue-3"
+    },
+    "event": {
+      "title": "Cours de yoga en plein air",
+      "description": "Séance gratuite de yoga ouverte à tous, tous niveaux.",
+      "long_description": null,
+      "category_slug": "sport",
+      "start_date": "2026-10-05T09:00:00",
+      "end_date": "2026-10-05T10:00:00",
+      "price_conditions": "Gratuit",
+      "price_min": 0.0,
+      "is_free": true,
+      "raw_keywords": "sport, yoga, bien-être",
+      "age_min": null,
+      "age_max": null,
+      "image_url": null,
+      "source_url": null,
+      "external_id": "fallback-event-3"
+    }
+  }
+]

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <main>
+        <p><a href="/">Accueil</a></p>
+        <h1>{{ title }}</h1>
+        <p>{{ total_count }} événement(s) — page {{ page }} sur {{ total_pages }}</p>
+
+        {% if events %}
+            <ul>
+                {% for event in events %}
+                    <li>
+                        <h2>{{ event.title }}</h2>
+                        <p>
+                            {{ event.start_date.strftime("%d/%m/%Y à %H:%M") }}
+                            {% if event.venue %}
+                                — {{ event.venue.name }}
+                            {% endif %}
+                        </p>
+                        {% if event.category %}
+                            <p>Catégorie : {{ event.category.name }}</p>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Aucun événement trouvé.</p>
+        {% endif %}
+
+        {% if total_pages > 1 %}
+            <nav aria-label="Pagination des événements">
+                {% if page > 1 %}
+                    <a href="/events?page={{ page - 1 }}{% if pagination_query %}&{{ pagination_query }}{% endif %}">
+                        Précédent
+                    </a>
+                {% endif %}
+
+                {% for page_number in page_numbers %}
+                    {% if page_number is none %}
+                        <span aria-hidden="true">…</span>
+                    {% elif page_number == page %}
+                        <strong aria-current="page">{{ page_number }}</strong>
+                    {% else %}
+                        <a href="/events?page={{ page_number }}{% if pagination_query %}&{{ pagination_query }}{% endif %}">
+                            {{ page_number }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page < total_pages %}
+                    <a href="/events?page={{ page + 1 }}{% if pagination_query %}&{{ pagination_query }}{% endif %}">
+                        Suivant
+                    </a>
+                {% endif %}
+            </nav>
+        {% endif %}
+    </main>
+</body>
+</html>
