@@ -1,6 +1,8 @@
 # ParisEvent
 
-Application FastAPI/Jinja2 + Tailwindcss + SQLite permettant de découvrir les événements culturels à Paris.
+Application Python(FastAPI/Jinja2) + Tailwindcss + SQLite permettant de découvrir les événements culturels à Paris.
+
+[Tester l'application ici](https://paris-event.onrender.com/)
 
 ## Conception & Architecture
 
